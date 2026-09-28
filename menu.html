@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="present.css">
+</head>
+<body>
+    <div class="container" id="categories">
+        <h2 class="section-title">OUR SPECIALTies</h2>
+    <div class="container" id="categories">
+        <div class="header-container">
+             <a href="present.html" class="back-to-home">← Back to Home</a>
+             <a href="order.html" class="orderr-btn">CHECKOUT</a>
+        </div>
+        <div class="categories-grid"></div>
+       
+    </div>
+    
+    <div class="categories-grid">
+       
+        <a  href="menu2.html"><div class="category-card" onclick="showMenu('african')">
+            <div class="category-img-container">
+                <img src="download (2).jpg" alt="African Cuisine">
+            </div>
+            <h3>African Delicacies</h3>
+            <p>Authentic local richness prepared to absolute perfection.</p>
+        </div>
+       </a>
+        
+        <div class="category-card" onclick="showMenu('fastfood')">
+           <a href="burger1.html"> <div class="category-img-container">
+                <img src="images (2).jpg" alt="Fast Food">
+            </div>
+            <h3>Fast Food & Grills</h3>
+            <p>Quick bites, succulent burgers, and crispy selections.</p></a>
+        </div>
+    
+
+        </a><div class="category-card" onclick="showMenu('continental')">
+            <a href="continental.html"><div class="category-img-container">
+                <img src="images (6).jpg" alt="Continental">
+            </div>
+            <h3>Continental & Pastries</h3>
+            <p>Exquisite international dishes and oven-fresh treats.</p></a>
+        </div>
+
+    </div>
+
+      <div class="category-card" onclick="showMenu('asian')"> 
+       <a href="asian.html"><div class="category-img-container">
+            <img src= "360_F_260128861_Q2ttKHoVw2VrmvItxyCVBnEyM1852MoJ.jpg">
+        </div>
+        <h3>Asian food</h3>
+        <p>Exquisite international asian dishes and fresh treats.</p></a> 
+    </div>
+     
+    
+    </div>
+
+    
+    <div id="menuDisplayContainer" class="menu-display">
+        <h3 id="menuTitle" style="text-transform: uppercase; color: var(--primary-red); margin-bottom: 15px;"></h3>
+        <p id="menuDescription" style="color: #666; margin-bottom: 20px;"></p>
+        <div class="menu-items-grid" id="menuItemsGrid">
+           
+        </div>
+    </div>
+</div>
+<script src="food-search.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

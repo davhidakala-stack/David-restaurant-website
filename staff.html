@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Inbox | David Restaurant</title>
+  <link rel="stylesheet" href="present.css">
+</head>
+<body>
+  <main class="staff-container">
+    <a class="back-link" href="present.html">David Restaurant</a>
+    <h1>Customer care inbox</h1>
+    <p>Enter the staff token configured on the server to review support and refund requests.</p>
+    <form id="staffLogin" class="staff-login">
+      <label for="adminToken">Staff token</label>
+      <input type="password" id="adminToken" autocomplete="current-password" required>
+      <button class="submit-btn" type="submit">Load requests</button>
+    </form>
+    <p id="staffStatus" class="form-status" role="status" aria-live="polite"></p>
+    <section id="staffRequests" class="staff-requests" aria-live="polite"></section>
+  </main>
+  <script src="staff.js"></script>
+</body>
+</html>

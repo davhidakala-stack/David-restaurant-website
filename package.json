@@ -1,0 +1,13 @@
+{
+  "name": "david-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "David Restaurant ordering and Paystack checkout server",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

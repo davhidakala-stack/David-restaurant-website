@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Restaurant</title>
+  <link rel="stylesheet" href="present.css">
+</head>
+<body>
+  <main class="checkout-container">
+    <a href="menu.html" class="back-link">&larr; Continue shopping</a>
+    <h1>Your cart</h1>
+    <p class="checkout-intro">Review your meal selection before placing your order.</p>
+
+    <section class="order-summary" aria-labelledby="cartHeading">
+      <h2 id="cartHeading">Order summary</h2>
+      <div id="cartItems">
+        
+      </div>
+      <p id="emptyCart" class="empty-cart">Your cart is empty. Add something delicious from the menu.</p>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+    </section>
+
+    <form id="checkoutForm" class="checkout-form" onsubmit="submitOrder(event)">
+      <h2>Delivery details</h2>
+      <label for="fullName">Full name</label>
+      <input type="text" id="fullName" placeholder="Jane Doe" required>
+      <label for="email">Email for receipt and support</label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email" required>
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" placeholder="0800 000 0000" required>
+      <label for="address">Delivery address</label>
+      <textarea id="address" rows="3" placeholder="Street, area, city" required></textarea>
+      <button type="submit" id="checkoutButton" class="submit-btn">Continue to secure payment</button>
+      <p id="checkoutStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <section id="orderConfirmation" class="order-confirmation" hidden>
+      <h2>Payment confirmed</h2>
+      <p>Your payment was verified and your order is confirmed. We will contact you about delivery.</p>
+      <p id="confirmedReference"></p>
+    </section>
+
+    <section id="refundSection" class="customer-service-section" hidden>
+      <h2>Request a refund</h2>
+      <p>Send a request for customer-care review. Submitting a request does not issue an automatic refund.</p>
+      <form id="refundForm" class="service-form">
+        <label for="refundEmail">Email used for the order</label>
+        <input type="email" id="refundEmail" autocomplete="email" required>
+        <label for="refundReason">Why are you requesting a refund?</label>
+        <textarea id="refundReason" rows="3" minlength="5" maxlength="1000" required></textarea>
+        <button type="submit" class="submit-btn">Send refund request</button>
+        <p id="refundStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="customer-service-section" aria-labelledby="customerCareHeading">
+      <h2 id="customerCareHeading">Customer care</h2>
+      <p>Need help with an order? Email <a id="supportEmailLink" href="mailto:davhidakala@gmail.com">davhidakala@gmail.com</a> or send us a message.</p>
+      <form id="supportForm" class="service-form">
+        <label for="supportEmail">Your email</label>
+        <input type="email" id="supportEmail" autocomplete="email" required>
+        <label for="supportMessage">How can we help?</label>
+        <textarea id="supportMessage" rows="3" minlength="5" maxlength="1000" required></textarea>
+        <button type="submit" class="submit-btn">Contact customer care</button>
+        <p id="supportStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
+  <script src="food-search.js"></script>
+  <script src="restaurant.js"></script>
+</body>
+</html>
