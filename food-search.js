@@ -135,14 +135,14 @@ function setupFoodSearch() {
         </form>`;
 
     const currentPage = window.location.pathname.split("/").pop();
-    if (currentPage !== "menu.html" && currentPage !== "order.html" && currentPage !== "present.html") {
+    if (currentPage !== "menu.html" && currentPage !== "order.html" && currentPage !== "index.html") {
         const menuLink = document.createElement("a");
         menuLink.href = "menu.html";
         menuLink.className = "back-to-menu";
         menuLink.textContent = "← Back to Main Menu";
 
         const homeLink = document.createElement("a");
-        homeLink.href = "present.html";
+        homeLink.href = "index.html";
         homeLink.className = "back-to-home";
         homeLink.textContent = "← Back to Home";
         search.prepend(homeLink);

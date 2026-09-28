@@ -297,7 +297,7 @@ function createApplication(options = {}) {
             }
 
             if (request.method === "GET") {
-                const pathname = decodeURIComponent(url.pathname === "/" ? "/present.html" : url.pathname);
+                const pathname = decodeURIComponent(url.pathname === "/" ? "/index.html" : url.pathname);
                 const filePath = path.resolve(ROOT, `.${pathname}`);
                 const relativePath = path.relative(ROOT, filePath);
                 const allowedExtensions = new Set([".html", ".css", ".js", ".jpg", ".jpeg", ".png", ".webp"]);
