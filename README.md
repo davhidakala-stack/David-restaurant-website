@@ -19,4 +19,4 @@ The server validates item names and prices against its own catalog, initializes 
 
 Customers can send support messages and request a refund for an order that has a verified payment. Requests can be reviewed at `/staff.html` using the `ADMIN_TOKEN`. Refund requests are not automatic: verify the customer and order, apply the restaurant's published cancellation/refund policy, and issue any approved refund from the Paystack dashboard. Then contact the customer-care address with the outcome.
 
-Configure a persistent database location and a database backup plan when deploying. Configure HTTPS and use a strong staff token. Never commit `.env` or the production database.
+Configure a persistent database location and a database backup plan when deploying. Configure HTTPS and use a strong staff token. Never commit `.env` or the production database.# David-restaurant-website
